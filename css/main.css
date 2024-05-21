@@ -71,17 +71,26 @@ body {
 	border-radius: 1rem;
 	margin-left: 1rem;;
 }
-.arvo-regular-table {
-	font-family: "Arvo", serif;
-	font-weight: 400;
-	font-style: normal;
-	/* border: 5px solid black; */
 
-}
 .arvo-bold-italic-nav {
 	font-family: "Arvo", serif;
 	font-weight: 700;
 	font-style: italic;
 	display: flex;
 	justify-content: center;
+}
+.mountainImage{
+	margin-top: 1.5rem;
+	border: .5rem solid white;
+	border-radius: 3rem;
+}
+#mountainSelect{
+margin-top: 1.5rem;
+}
+.desc{
+	font-size: large;
+}
+#mountainResults{
+	margin: auto;
+	width: 25%;
 }
