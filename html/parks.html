@@ -18,6 +18,7 @@
         href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=M+PLUS+1:wght@100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/parks.css">
     <script src="../scripts/main.js"></script>
     <script src="../scripts/parks.js"></script>
     <script src="../scripts/data/locationData.js"></script>
@@ -36,10 +37,11 @@
     </nav>
     <h1 class="arvo-bold">Parks</h1>
     <h2 class="arvo-bold">Search By:</h2>
-    <label class="arvo-regular">Location(State)<input type="radio" name="searchBy" id="locationRadio" value=""
+    <label class="arvo-regular-inputs">Location(State)<input type="radio" name="searchBy" id="locationRadio" value=""
             checked></label>
-    <label class="arvo-regular">Park Type<input type="radio" name="searchBy" id="parkTypeRadio"></label>
-    <div><label class="arvo-regular" id="locationLabel">Location:
+    <label class="arvo-regular-inputs">Park Type<input type="radio" name="searchBy" id="parkTypeRadio" value=""></label>
+    <label class="arvo-regular-inputs">All Parks<input type="radio" name="searchBy" id="allParksRadio"></label>
+    <div class="arvo-regular-inputs"><label class="arvo-regular" id="locationLabel">Location:
             <select id="locations"></select></label>
         <label class="arvo-regular" id="parkTypeLabel">Park Type:<select id="parkType"></select></label>
     </div>
