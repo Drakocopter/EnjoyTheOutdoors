@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <tr><td>${park.City}, ${park.State}${park.ZipCode > 0 ? `, ${park.ZipCode}` : ''}</td></tr>
                     ${park.Phone && park.Phone.length > 0 ? `<tr><td>Phone Number: ${park.Phone}</td></tr>` : ''}
                     ${park.Fax && park.Fax.length > 0 ? `<tr><td>Fax: ${park.Fax}</td></tr>` : ''}
-                    ${park.Visit && park.Visit.length > 0 ? `<tr><td>Website: <a class="website" href="${park.Visit}" target="_blank" rel="noopener noreferrer">${park.Visit}</a></td></tr>` : ''}
+                    ${park.Visit && park.Visit.length > 0 ? `<tr><td>Website: <a class="website" href="${park.Visit}" target="_blank" rel="noopener noreferrer">${park.Visit}</a></td></tr>` : '<tr><td>No Website</td></tr>'}
                     <tr><td>Latitude / Longitude: ${park.Latitude}, ${park.Longitude}</td></tr>
                 </tbody>
             </table>

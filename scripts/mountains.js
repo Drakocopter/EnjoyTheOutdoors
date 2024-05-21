@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <img class="mountainImage" alt="mountain" src="../images/${m.img}">
     <br>
     <br>
-    <h3>Name: ${m.name}</h3>
+    <h3>${m.name}</h3>
     <br>
     <h5>Elevation: ${m.elevation} ft.
     <br>
@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
     <br>
     Lattitude/Longitude: (${m.coords.lat}, ${m.coords.lng})
     </h5>
-    <br>
     <br>
     <p class="desc">${m.desc}</p>
     `
