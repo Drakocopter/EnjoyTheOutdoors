@@ -1,11 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
-
     function getPark(park) {
         const element = document.createElement("div");
         element.classList.add("park");
-        element.className = "arvo-regular-table";
+        element.className = "arvo-regular-parktable";
         element.innerHTML = `
-            <table><tr>${park.LocationName}</tr><table>
+            <table>
+                <thead>
+                    <tr><td>${park.LocationName}</td></tr>
+                </thead>
+                <tbody>
+                ${park.Address && park.Address.length > 0 ? `<tr><td>${park.Address}</td></tr>` : ''}
+                    <tr><td>${park.City}, ${park.State}${park.ZipCode > 0 ? `, ${park.ZipCode}` : ''}</td></tr>
+                    ${park.Phone && park.Phone.length > 0 ? `<tr><td>Phone Number: ${park.Phone}</td></tr>` : ''}
+                    ${park.Fax && park.Fax.length > 0 ? `<tr><td>Fax: ${park.Fax}</td></tr>` : ''}
+                    ${park.Visit && park.Visit.length > 0 ? `<tr><td>Website: <a class="website" href="${park.Visit}" target="_blank" rel="noopener noreferrer">${park.Visit}</a></td></tr>` : ''}
+                    <tr><td>Latitude / Longitude: ${park.Latitude}, ${park.Longitude}</td></tr>
+                </tbody>
+            </table>
+            
         `;
         return element;
     }
@@ -14,13 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
         content.innerHTML = ''; // Clear previous results
         let filtered = [];
         if (locationRadio.checked) {
-            filtered = nationalParksArray.filter(o => {
-                return o.State.toUpperCase() === locations.value.toUpperCase();
-            });
+            filtered = nationalParksArray.filter(o => o.State.toUpperCase() === locations.value.toUpperCase());
+        } else if (parkTypeRadio.checked) {
+            filtered = nationalParksArray.filter(o => o.LocationName.includes(parkType.value));
         } else {
-            filtered = nationalParksArray.filter(o => {
-                return o.LocationName.includes(parkType.value);
-            })
+            filtered = nationalParksArray
         }
         filtered.forEach(o => content.appendChild(getPark(o)));
     }
@@ -35,20 +45,23 @@ document.addEventListener("DOMContentLoaded", () => {
         if (locationRadio.checked) {
             locationLabel.style.display = "block";
             parkTypeLabel.style.display = "none";
-        } else {
+        } else if (parkTypeRadio.checked) {
             locationLabel.style.display = "none";
             parkTypeLabel.style.display = "block";
+        } else {
+            locationLabel.style.display = "none";
+            parkTypeLabel.style.display = "none";
         }
         showResults();
     }
 
     locationRadio.addEventListener("click", handleSearchBy);
     parkTypeRadio.addEventListener("click", handleSearchBy);
+    allParksRadio.addEventListener("click", handleSearchBy)
 
     locationsArray.map(option).forEach(oe => locations.appendChild(oe));
     parkTypesArray.map(option).forEach(oe => parkType.appendChild(oe));
 
-    //Show results on startup
+    // Show results on startup
     showResults();
-
 }); // END CONTENT LOADED
