@@ -1,0 +1,11 @@
+#treeImage1{
+    width: 45vw;
+    float: left;
+}
+#treeImage2{
+    width: 45vw;
+    float: right;
+}
+h2{
+    margin-top: 1.5rem;
+}
