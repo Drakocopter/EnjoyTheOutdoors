@@ -39,4 +39,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     mountainSelect.addEventListener("change", showMountain);
     showMountain();
+    
 }) //END LOADED

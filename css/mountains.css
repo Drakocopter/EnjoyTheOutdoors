@@ -1,0 +1,9 @@
+.mountainImage {
+	margin-top: 1.5rem;
+	border: .5rem solid white;
+	border-radius: 3rem;
+}
+
+#mountainSelect {
+	margin-top: 1.5rem;
+}
