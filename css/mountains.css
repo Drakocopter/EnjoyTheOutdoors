@@ -8,7 +8,7 @@ body {
     position: fixed;
     top: 0;
     bottom: 0;
-    width: 22%; /* Adjust width to your image's width */
+    width: 22%; /* Adjust width to image */
     background-size: cover;
     background-repeat: no-repeat;
 }
