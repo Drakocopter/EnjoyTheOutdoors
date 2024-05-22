@@ -37,6 +37,7 @@ body {
 	font-family: "Arvo", serif;
 	font-weight: 400;
 	font-style: normal;
+	text-shadow: 0px 0px 10px white;
 }
 
 .arvo-bold {
@@ -88,10 +89,7 @@ body {
 	font-size: large;
 }
 
-#mountainResults {
-	margin: auto;
-	width: 25%;
-}
+
 
 a:hover {
 	color: gray;
