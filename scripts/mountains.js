@@ -31,7 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
     <p class="desc">${m.desc}</p>
     `
         const sunData = await getSunsetForMountain(m.coords.lat, m.coords.lng);
-        mountainResults.innerHTML += ` 
+        mountainResults.innerHTML += `
+        <br>
     <p class="desc"> Sunrise:${sunData.results.sunrise}
     <br>
         Sunset:${sunData.results.sunset}</p>`
