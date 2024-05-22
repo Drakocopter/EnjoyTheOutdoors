@@ -1,26 +1,60 @@
 .arvo-regular-parktable {
-	font-family: "Arvo", serif;
-	font-weight: 400;
-	font-style: normal;
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 1.5rem;
     width: 50vw;
-	border: 5px dashed rgb(0, 0, 0);
+    border: 5px dashed rgb(0, 0, 0);
     text-shadow: 0px 0px 1rem white;
     margin: .5rem auto;
 }
-table{
+
+table {
     margin: auto;
 }
+
 .arvo-regular-inputs {
-	font-family: "Arvo", serif;
-	font-weight: 400;
-	font-style: normal;
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: larger;
     text-shadow: 0px 0px 1rem white;
+    padding: .2rem;
 }
-.website{
+
+.website {
     text-decoration: none;
     color: white;
     text-shadow: 0px 0px 1rem black;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.tree-left,
+.tree-right {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 22%;
+    /* Adjust width to your image's width */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tree-left {
+    left: 0;
+    background-image: url(../images/treeimage.webp);
+    background-position: right center;
+    /* Positioning the background to show the right half */
+}
+
+.tree-right {
+    right: 0;
+    background-image: url(../images/treeimage.webp);
+    background-position: left center;
+    /* Positioning the background to show the left half */
+}

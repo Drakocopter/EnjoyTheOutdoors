@@ -1,9 +1,45 @@
-.mountainImage {
-	margin-top: 1.5rem;
-	border: .5rem solid white;
-	border-radius: 3rem;
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.tree-left, .tree-right {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 22%; /* Adjust width to your image's width */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tree-left {
+    left: 0;
+    background-image: url(../images/treeimage.webp);
+    background-position: right center; /* Positioning the background to show the right half */
+}
+
+.tree-right {
+    right: 0;
+    background-image: url(../images/treeimage.webp);
+    background-position: left center; /* Positioning the background to show the left half */
 }
 
 #mountainSelect {
-	margin-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+#mountainResults {
+    display: block;
+}
+
+.desc {
+    width: 50%;
+    margin: auto;
+}
+
+.mountainImage {
+    margin-top: 1.5rem;
+    border: .5rem solid white;
+    border-radius: 3rem;
 }
