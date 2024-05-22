@@ -9,3 +9,6 @@ So I just did an opening paragraph with some trees. That's really it.
 
 # [Park Page](html/parks.html)
 Here I implemented a dashed table to display the [nationalParkData.js.](scripts/data/nationalParkData.js)
+I like everythiing to be centered, so the table as well as all the data is centered, which left some space around the edges,
+so I added the trees to the edge, though getting them implemented was quite difficult, as I was having trouble cutting them off at the
+sides and putting them at the edge of the page reliably.
