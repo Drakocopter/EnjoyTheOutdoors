@@ -16,13 +16,13 @@ body {
 .tree-left {
     left: 0;
     background-image: url(../images/treeimage.webp);
-    background-position: right center; /* Positioning the background to show the right half */
+    background-position: right center; 
 }
 
 .tree-right {
     right: 0;
     background-image: url(../images/treeimage.webp);
-    background-position: left center; /* Positioning the background to show the left half */
+    background-position: left center; 
 }
 
 #mountainSelect {

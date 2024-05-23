@@ -49,12 +49,10 @@ body {
     left: 0;
     background-image: url(../images/treeimage.webp);
     background-position: right center;
-    /* Positioning the background to show the right half */
 }
 
 .tree-right {
     right: 0;
     background-image: url(../images/treeimage.webp);
     background-position: left center;
-    /* Positioning the background to show the left half */
 }
