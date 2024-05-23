@@ -15,7 +15,7 @@ I like everythiing to be centered, so the table as well as all the data is cente
 so I added the trees to the edge, though getting them implemented was quite difficult, as I was having trouble cutting them off at the
 sides and putting them at the edge of the page reliably. I eventually got it though. 
 
-# [Mountain Page](html/moutains.html)!
+# [Mountain Page](html/moutains.html)
 ![mountainspage](images/mountainspage.png)
 The Mountain Page was more simple than the parks page because there was less required. As a result it took significantly less time than the parks page. The only issue was getting the image to center correctly and even then that wasn't that bad.
 
