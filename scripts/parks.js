@@ -33,6 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
             filtered = nationalParksArray
         }
         filtered.forEach(o => content.appendChild(getPark(o)));
+        if (filtered.length == 0){
+            content.innerHTML = `<h2 class="arvo-regular">No Results Found :(</h2>`
+        }
     }
 
     locations.addEventListener("change", showResults);
